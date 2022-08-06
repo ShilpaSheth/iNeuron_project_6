@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <style>
+      /* Write styles here */
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #navbarMonstera{
+        /* background-color: bisque; */
+        height: 40px;
+        margin: 70px 60px 0;
+        display: flex;
+        position: relative;
+        
+      }
+      #navbarMonstera #navFirst img{
+        height: 35px;
+        padding-left: -500px;
+      }
+      #navbarMonstera #navMid{
+        width: 670px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-left: 300px;
+      }
+      #navbarMonstera #navMid div h4{
+        font-size: 20px;
+        font-family: Allerta;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+      }
+      #navbarMonstera #navMid div h4:hover{
+        text-decoration: underline 2px;
+        text-underline-offset: 10px;
+      }
+      #navbarMonstera #navEnd{
+        width: 165px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        position: absolute;
+        left: calc(100vw - 300px) ;
+      }
+
+
+
+
+      #midWhole{
+        /* background-color: aquamarine; */
+        margin-top: 60px;
+        height: calc(100vh - 70px - 40px - 100px);
+        width: 100vw;
+        position: fixed;
+        display: flex;
+      }
+      #midWhole #midWholePart1{
+        /* background-color: rgb(191, 143, 236); */
+        width: 80%;
+        padding-left: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+
+
+      #midWhole #midWholePart1 #midWholePart11{
+        /* background-color: rgb(52, 213, 23); */
+        /* border: 5px solid red; */
+        height: 57%;
+        width: 58%;
+        position: fixed;
+      }
+      #midWhole #midWholePart1 #midWholePart11 div{
+        background-color: #fff;
+        position: relative;
+        height: 355px;
+      }
+      #midWhole #midWholePart1 #midWholePart11 div ul{
+        /* background-color: aqua; */
+        position: relative;
+        bottom: -40px;
+      }
+      #midWhole #midWholePart1 #midWholePart11 div ul li{
+        width: 575px;
+        font-size: 23px;
+        position: relative;
+        font-family: "Abel";
+        letter-spacing: 1px;
+      }
+      li::marker{
+        color: black;
+        font-size: 1.2em;
+        
+      }
+      #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+      
+        /* background-color: red; */
+        position: absolute;
+        width: 1000px;
+        bottom: -47px;
+        font-size: 115px;
+        font-family: "Allerta";
+      }
+
+
+
+      #midWhole #midWholePart1 #midWholePart12{
+        background-color: rgb(98, 128, 98);
+        height: 8%;
+        width: 23%;
+        position: fixed;
+        bottom: 180px;
+        border-radius: 50px;
+        
+      }
+    
+      #midWhole #midWholePart1 #midWholePart12 #midWholePart121{
+        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+      }
+      #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div{
+        
+      }
+      #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+        font-size: 40px;
+        font-family: "Abel";
+        color: white;
+        text-align: center;
+        font-weight: lighter;
+        /* border: 5px solid red; */
+        
+      }
+      
+      #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+        padding-top: 12px;
+        margin-left: 8px;
+        /* border: 5px solid red; */
+        
+      }
+
+
+
+      #midWhole #midWholePart1 #midWholePart13{
+        /* background-color: rgb(61, 29, 204); */
+        width: 60%;
+        position: fixed;
+        bottom: 20px;
+        display: flex;
+        
+      }
+      #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts{
+          display: flex;
+      }
+      #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div img#feeding{
+          height: 80%;
+      }
+      #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div:nth-child(1),div:nth-child(2), div:nth-child(3){
+        margin-left: 10px;
+      }
+      #midWhole #midWholePart1 .midWholePart13Parts div h4{
+        font-size: 22px;
+      }
+      #midWhole #midWholePart1 .midWholePart13Parts div p.text{
+          color: black;
+          font-size: 11px;
+          margin-top: 5px;
+          font-family: "Abel";
+      }
+      #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div img#light{
+        height: 60%;
+      }
+      #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div img#care{
+        height: 60%;
+      }
+
+      #midWhole div img#imgMain{
+          height: 120%;
+          width: 100%;
+          /* position: fixed; */
+      }
+
+
+
+        /* Mobile (Smartphone) max-width:                    480px
+           Low Resolution Tablets and ipads max-width:       767px
+           Tablets Ipads portrait mode max-width:            1024px
+           Desktops max-width:                               1280px
+           Huge size (Larger screen) max-width:              1281px , 1537 greater */
+
+
+
+      /* RESPONSIVENESS */
+      /* FROM 768px to rest */
+      @media (min-width: 768px) and (max-width: 979.99px){
+        /* NAV MID */
+        #navbarMonstera #navMid{
+                width: 170px;
+                margin-left: 30px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 17px;
+                padding-right: 20px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 6%;
+                width: 18%;
+                bottom: 130px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: -10px;
+              }
+
+              /* MID PART 1 */
+              #midWhole #midWholePart1 #midWholePart11{
+                height: 57%;
+                width: 40%;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul{
+                bottom: -40px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li{
+                width: 500px;
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+                bottom: -40px;
+                font-size: 70px;
+              }
+
+              /* NAV END */
+              #navbarMonstera #navEnd{
+              width: 50px;
+              margin-left: 90px;
+            }
+
+            #midWhole #midWholePart1 #midWholePart13{
+              width: 55%;
+              bottom: -10px;
+   
+              
+            }
+            #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts{
+                display: flex;
+            }
+            #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div img#feeding{
+                height: 40%;
+            }
+            #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div:nth-child(1),div:nth-child(2), div:nth-child(3){
+              margin-left: 2px;
+            }
+            #midWhole #midWholePart1 .midWholePart13Parts div h4{
+              font-size: 18px;
+            }
+            #midWhole #midWholePart1 .midWholePart13Parts div p.text{
+                color: black;
+                font-size: 11px;
+                margin-top: 5px;
+                font-family: "Abel";
+            }
+            #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div img#light{
+              height: 30%;
+            }
+            #midWhole #midWholePart1 #midWholePart13 .midWholePart13Parts div img#care{
+              height: 30%;
+            }
+
+      }
+
+
+
+      @media (min-width: 980px) and (max-width: 1023.99px){
+
+                /* NAV MID */
+                #navbarMonstera #navMid{
+                width: 370px;
+                margin-left: 70px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 17px;
+                padding-right: 40px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 6%;
+                width: 18%;
+                bottom: 130px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: -10px;
+              }
+
+              /* MID PART 1 */
+              #midWhole #midWholePart1 #midWholePart11{
+                height: 57%;
+                width: 58%;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul{
+                bottom: -80px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li{
+                width: 575px;
+                font-size: 18px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+                bottom: -40px;
+                font-size: 111px;
+              }
+
+              /* NAV END */
+              #navbarMonstera #navEnd{
+              width: 110px;
+              margin-left: 70px;
+            }
+      }
+
+
+      @media (min-width: 1024px) and (max-width: 1100.99px){
+
+             /* NAV MID */
+             #navbarMonstera #navMid{
+                width: 370px;
+                margin-left: 110px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 17px;
+                padding-right: 40px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 6%;
+                width: 18%;
+                bottom: 130px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: -10px;
+              }
+
+              /* MID PART 1 */
+              #midWhole #midWholePart1 #midWholePart11{
+                height: 57%;
+                width: 58%;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul{
+                bottom: -80px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li{
+                width: 575px;
+                font-size: 18px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+                bottom: -40px;
+                font-size: 111px;
+              }
+
+              /* NAV END */
+              #navbarMonstera #navEnd{
+              width: 110px;
+              margin-left: 70px;
+            }
+          }
+
+    
+      @media (min-width: 1101px) and (max-width: 1180px){
+        /* NAV MID */
+             #navbarMonstera #navMid{
+                width: 500px;
+                margin-left: 150px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 17px;
+                padding-right: 40px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 6%;
+                width: 18%;
+                bottom: 130px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: -10px;
+              }
+              /* NAV MID */
+             #navbarMonstera #navMid{
+                width: 370px;
+                margin-left: 110px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 17px;
+                padding-right: 40px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 6%;
+                width: 18%;
+                bottom: 130px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: -10px;
+              }
+
+              /* MID PART 1 */
+              #midWhole #midWholePart1 #midWholePart11{
+                height: 57%;
+                width: 58%;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul{
+                bottom: -80px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li{
+                /* width: 575px; */
+                font-size: 20px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+                bottom: -40px;
+                font-size: 111px;
+              }
+
+              /* NAV END */
+              #navbarMonstera #navEnd{
+              width: 110px;
+              margin-left: 70px;
+            }
+
+      }
+
+      @media (min-width: 1181px) and (max-width: 1270.99px){
+              /* NAV MID */
+             #navbarMonstera #navMid{
+                width: 370px;
+                margin-left: 200px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 20px;
+                padding-right: 40px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 8%;
+                width: 22%;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 30px;
+                padding-top: 5px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: 3px;
+              }
+
+              /* MID PART 1 */
+              #midWhole #midWholePart1 #midWholePart11{
+                height: 57%;
+                width: 58%;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul{
+                bottom: -30px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li{
+                /* width: 575px; */
+                font-size: 24px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+                bottom: -42px;
+                font-size: 130px;
+              }
+
+              /* NAV END */
+              #navbarMonstera #navEnd{
+              width: 110px;
+              margin-left: 70px;
+            }
+      }
+
+
+
+      @media (min-width: 1271px) and (max-width: 1370.99px){
+
+        /*NAV MID */
+             #navbarMonstera #navMid{
+                width: 370px;
+                margin-left: 200px;
+              }
+              #navbarMonstera #navMid div h4{
+                font-size: 20px;
+                padding-right: 40px;
+              }
+      
+              /* DISCOVER BUTTON */
+              #midWhole #midWholePart1 #midWholePart12{
+                height: 8%;
+                width: 22%;
+                bottom: 150px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div h1{
+                font-size: 30px;
+                padding-top: 5px;
+              }
+              #midWhole #midWholePart1 #midWholePart12 #midWholePart121 div#midWholePart122 img{
+                margin-left: 7px;
+                height: 30px;
+                margin-top: 3px;
+              }
+
+              /* MID PART 1 */
+              #midWhole #midWholePart1 #midWholePart11{
+                height: 57%;
+                width: 58%;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul{
+                bottom: -30px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li{
+                /* width: 575px; */
+                font-size: 24px;
+              }
+              #midWhole #midWholePart1 #midWholePart11 div ul li h1{
+                bottom: -42px;
+                font-size: 130px;
+              }
+
+              /* NAV END */
+              #navbarMonstera #navEnd{
+              width: 110px;
+              margin-left: 70px;
+            }
+      }
+    </style>
+  </head>
+
+
+
+
+
+  <body>
+    <nav id="navbarMonstera">
+      <div id="navFirst">
+        <img src="./photos/Logo.svg" />
+      </div>
+
+      <div id="navMid">
+        <div>
+          <h4>Home</h4>
+        </div>
+        <div><h4>Collection</h4></div>
+        <div>
+          <h4>Shop</h4>
+        </div>
+        <div>
+          <h4>About</h4>
+        </div>
+        <div>
+          <h4>Contact</h4>
+        </div>
+      </div>
+
+      <div id="navEnd">
+        <div>
+          <img src="/photos/cart.svg" />
+        </div>
+        <div>
+          <img src="./photos/user.svg" />
+        </div>
+        <div>
+          <img src="./photos/search.svg" />
+        </div>
+      </div>
+    </nav>
+
+    <div id="midWhole">
+      <div id="midWholePart1">
+        <div id="midWholePart11">
+          <div>
+            <ul>
+              <li><h1 id="monstera" style="font-weight: bold;">MONSTERA</h1></li>
+              <li></li>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </li>
+              <li>
+                Morbi justo metus, euismod quis lorem ornare, convallis sollicitudin neque.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="midWholePart12">
+          <div id="midWholePart121">
+            <div>
+              <h1>DISCOVER</h1>
+            </div>
+            <div id="midWholePart122">
+              <img src="./photos/greaterThan.svg" />
+            </div>
+          </div>
+        </div>
+        <div id="midWholePart13">
+          <div class="midWholePart13Parts">
+            <div>
+              <img id="feeding" src="./photos/water plant.png" />
+            </div>
+            <div>
+              <h4>Feeding</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consecteturadipisicing elit
+              </p>
+            </div>
+          </div>
+          <div class="midWholePart13Parts">
+            <div>
+              <img id="light" src="./photos/light.svg" alt="" />
+            </div>
+            <div>
+              <h4>Light</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+          <div class="midWholePart13Parts">
+            <div>
+              <img id="care" src="./photos/plough.svg" />
+            </div>
+            <div>
+              <h4>Care</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img id="imgMain" src="./photos/6_folwer_cut.png" />
+      </div>
+    </div>
+
+
+  </body>
+</html>
